@@ -7,7 +7,7 @@ RUN npm install --development
 COPY . .
 RUN npm run build
 
-FROM node:16.13.1-alpine3.10
+FROM node:16.13.1-alpine
 WORKDIR /app
 COPY --from=builder /app .
 EXPOSE 3000
