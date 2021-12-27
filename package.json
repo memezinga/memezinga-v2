@@ -1,0 +1,33 @@
+{
+  "name": "memezinga",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
+    "deps:review": "lockfile-lint --path package-lock.json --type npm --validate-https --allowed-hosts npm && npm audit && npm outdated",
+    "deps:upgrade": "npm outdated; ncu -u && npm install && npm install --package-lock-only"
+  },
+  "dependencies": {
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "7.0.3",
+    "lockfile-lint": "4.6.2",
+    "npm-check-updates": "12.0.5",
+    "standard": "16.0.4"
+  },
+  "standard": {
+    "env": [
+      "jest",
+      "browser"
+    ]
+  }
+}
