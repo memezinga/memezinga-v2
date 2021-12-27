@@ -12,7 +12,7 @@ jobs:
     - name: Check the project
       uses: actions/setup-node@v1
       with:
-        node-version: '14.16.0'
+        node-version: '16.13.1'
 
     - name: Install dependencies
       run: npm ci
