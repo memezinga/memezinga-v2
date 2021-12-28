@@ -14,18 +14,20 @@
     "deps:upgrade": "npm outdated; ncu -u && npm install && npm install --package-lock-only"
   },
   "dependencies": {
+    "lodash": "4.17.21",
+    "lowdb": "3.0.0",
     "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "10.4.0",
     "cross-env": "7.0.3",
     "lockfile-lint": "4.6.2",
     "npm-check-updates": "12.0.5",
     "postcss": "^8.4.5",
     "standard": "16.0.4",
-    "tailwindcss": "^3.0.7"
+    "tailwindcss": "3.0.7"
   },
   "standard": {
     "env": [
